@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "uuid-provider": {
+      "command": "node",
+      "args": ["/Users/ericwu/projects/doc/claude_working_dir/uuid-mcp/build/index.js"]
+    }
+  }
+}

@@ -1,27 +1,47 @@
 {
-  "name": "uuid-mcp",
-  "version": "1.0.0",
-  "description": "A simple MCP server that provides timestamp-based UUIDs",
-  "type": "module",
-  "main": "build/index.js",
-  "scripts": {
-    "build": "tsc",
-    "start": "node build/index.js"
-  },
-  "keywords": [
-    "mcp",
-    "uuid",
-    "llm"
-  ],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.8.0",
-    "uuid": "^11.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.17",
-    "@types/uuid": "^10.0.0",
-    "typescript": "^5.8.2"
-  }
+    "name": "uuid-mcp",
+    "version": "1.0.0",
+    "description": "A simple MCP server that provides timestamp-based UUIDs",
+    "type": "module",
+    "main": "build/index.js",
+    "exports": {
+        ".": {
+            "import": "./build/index.js",
+            "types": "./build/index.d.ts"
+        }
+    },
+    "files": [
+        "build",
+        "LICENSE",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tanker327/uuid-mcp.git"
+    },
+    "homepage": "https://github.com/tanker327/uuid-mcp#readme",
+    "bugs": {
+        "url": "https://github.com/tanker327/uuid-mcp/issues"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node build/index.js",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "mcp",
+        "uuid",
+        "llm"
+    ],
+    "author": "tanker327",
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.8.0",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.17",
+        "@types/uuid": "^10.0.0",
+        "typescript": "^5.8.2"
+    }
 }

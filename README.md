@@ -1,5 +1,8 @@
 # UUID MCP Provider
 
+[![npm version](https://img.shields.io/npm/v/uuid-mcp.svg)](https://www.npmjs.com/package/uuid-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A simple Model Context Protocol (MCP) server that provides timestamp-based UUIDs whenever it's called by an LLM.
 
 ## Features
@@ -12,10 +15,13 @@ A simple Model Context Protocol (MCP) server that provides timestamp-based UUIDs
 ## Installation
 
 ```bash
-# Install dependencies
-npm install
+# Install from NPM
+npm install uuid-mcp
 
-# Build the project
+# Or install from source
+git clone https://github.com/tanker327/uuid-mcp.git
+cd uuid-mcp
+npm install
 npm run build
 ```
 
